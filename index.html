@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Coffee & Cats Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>☕ Coffee & Cats 🐾</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('coffee')">Coffee</button>
+    <button onclick="filterImages('cats')">Cats</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image coffee">
+      <img src="images/coffee1.jpg" alt="Coffee 1" onclick="openLightbox(this)" />
+    </div>
+    <div class="image coffee">
+      <img src="images/coffee2.jpg" alt="Coffee 2" onclick="openLightbox(this)" />
+    </div>
+    <div class="image cats">
+      <img src="images/cat1.jpg" alt="Cat 1" onclick="openLightbox(this)" />
+    </div>
+    <div class="image cats">
+      <img src="images/cat2.jpg" alt="Cat 2" onclick="openLightbox(this)" />
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
