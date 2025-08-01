@@ -1,0 +1,1 @@
+A modern and Image Gallery built as part of my internship project at CodeAlpha. This project is designed using HTML, CSS, and JavaScript, and includes smooth transitions, responsive layout, and simple interactivity.
