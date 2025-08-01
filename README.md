@@ -1,2 +1,1 @@
-Internship Project — CodeAlpha
-This project is developed as a part of my internship at CodeAlpha. It showcases a modern and responsive Image Gallery built using HTML, CSS, and JavaScript, focusing on simplicity, clean design, and smooth interactivity.
+Internship Project — CodeAlpha | This project is developed as a part of my internship at CodeAlpha. It showcases a modern and responsive Image Gallery built using HTML, CSS, and JavaScript, focusing on simplicity, clean design, and smooth interactivity.
