@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Galleria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Art Galleria</h1>
+    </header>
+
+    <section class="categories">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="coffee">Coffee</button>
+        <button class="filter-btn" data-category="cats">Cats</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <!-- Images will be dynamically loaded here -->
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <footer>
+    <p>Contact: <a href="mailto:dibyasmita1202@gmail.com">Gmail</a> | 
+    <a href="https://www.linkedin.com/in/dibyasmita-hati-54831b26b/" target="_blank">LinkedIn</a></p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

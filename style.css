@@ -1,0 +1,118 @@
+/* General */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f0e1; /* Beige background only */
+    color: #6b4c3b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #6b4c3b;
+    color: #f5f0e1;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #8c5e4a;
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Updated min width */
+    gap: 15px;
+    padding: 0 20px 50px 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Makes image fit nicely without stretching */
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect: subtle vintage */
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: sepia(0.6) saturate(0.7);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f5f0e1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: #f5f0e1;
+    font-size: 50px;
+    padding: 10px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover { color: #c4a484; }
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    background-color: #e7d9c7;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .prev, .next { font-size: 35px; }
+    header { font-size: 2em; }
+    .gallery img { height: 150px; }
+}
