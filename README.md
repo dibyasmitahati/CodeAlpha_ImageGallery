@@ -24,18 +24,6 @@
 
 ---
 
-## **Folder Structure**
-
-CodeAlpha_ImageGallery/
-│
-├─ index.html        # Main HTML file
-├─ style.css         # Styles and layout
-├─ script.js         # JavaScript functionality
-├─ images/           # Folder for all images
-└─ README.md         # Project documentation
-
----
-
 ## **Installation / Usage**
 
 1. Clone or download this repository:
